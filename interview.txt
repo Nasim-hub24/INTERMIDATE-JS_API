@@ -1,0 +1,69 @@
+
+        {SOME COMMON INTERVIEW QUESTIONS} 
+
+---------(1) => difference between primitive and non-primitive data type-------
+
+Primitive values are simple values that store a single piece of data.
+String
+Number
+Boolean
+Undefined
+Null
+BigInt
+Symbol
+
+Non-primitive values can store multiple values or complex data.
+Object
+Array
+Function
+
+-----------(2) => TRUTHY AND FALSY values---------
+
+Everything that is not falsy is truthy.
+if ("Ahmed") {
+  console.log("Truthy");
+}
+OUTPUT : Truthy
+
+There are only a few values that are considered falsy:
+if (0) {
+  console.log("Hello");
+} else {
+  console.log("Falsy");
+}
+OUTPUT: Falsy
+
+-------------(3) => NULL VS Undefined-----------
+
+undefined	                     |       null
+                                
+Value is not assigned yet	     |    Value is intentionally empty
+Set automatically by JavaScript	 |   Set manually by the developer
+Type is "undefined"	             |   Type is "object" (a historical JavaScript bug)
+
+------------(4) =>difference between (==) & (===)-----------
+
+== → Value only
+=== → Value + Type
+
+------------(5) => SCOPE IN JS------------
+
+Scope in JavaScript is the area where a variable is accessible. The main types are:
+>> Global Scope → accessible everywhere.
+>> Function Scope → accessible only inside the function.
+>> Block Scope → accessible only inside the block ({}) when declared with let or const.
+
+------------(6) => HOSTING IN JS------------
+
+Hoisting is JavaScript's behavior of moving declarations to the top of their scope before execution. 
+var variables are hoisted and initialized with undefined,
+ let and const are hoisted but cannot be accessed before their declaration. 
+ Function declarations are fully hoisted
+
+var      → Hoisted, value = undefined
+let      → Hoisted, but cannot use before declaration
+const    → Hoisted, but cannot use before declaration
+function → Fully hoisted
+
+------------(7) => HOW TO USE JS CALL BACK FUNCTION----------
+
