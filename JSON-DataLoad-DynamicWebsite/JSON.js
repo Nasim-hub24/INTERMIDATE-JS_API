@@ -30,9 +30,13 @@ const person = {
 console.log(person, typeof person);
 
 //     -------< OBJECT FORMAT TO JSON FORMAT >---------
+//     STRINGIFY Converts a JavaScript object → JSON string
+
 const personJson = JSON.stringify(person);
 console.log(personJson , typeof personJson);
 
 //      -------< STRING TO OBJECT >---------
+//      Converts a JSON string → JavaScript object
+
 const parseJson = JSON.parse(personJson);
 console.log(parseJson);
