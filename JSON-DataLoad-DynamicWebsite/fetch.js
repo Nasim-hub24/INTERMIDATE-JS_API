@@ -12,6 +12,7 @@ const loadData = () => {
         .then(json => console.log(json))
 };
 
+/*
 const loadPost=() =>{
     fetch('https://jsonplaceholder.typicode.com/posts')
         .then(Res => Res.json())
@@ -26,6 +27,7 @@ const displayPost = (posts) =>{
         console.log(post);
     });
 };
+*/
 
 /*
     PRACTICE 
