@@ -10,7 +10,22 @@ const loadData = () => {
     fetch('https://jsonplaceholder.typicode.com/todos/1')
         .then(Response => Response.json())
         .then(json => console.log(json))
-}
+};
+
+const loadPost=() =>{
+    fetch('https://jsonplaceholder.typicode.com/posts')
+        .then(Res => Res.json())
+        .then(data => {
+            console.log(data);
+            displayPost(data);
+        })
+};
+
+const displayPost = (posts) =>{
+    posts.forEach(post => {
+        console.log(post);
+    });
+};
 
 /*
     PRACTICE 
