@@ -8,24 +8,25 @@ const loadPost = () =>{
         })
 }
 
-
-
-
 // FOR SHOWING IN USER INTERFACE OR UI
 const displayPost = (posts) =>{
 
     // 1=> GET THE CONTAINER
     const postContainer = document.getElementById("post-container");
+    postContainer.innerHTML = "";
 
     posts.forEach(post => {
         //console.log(post.title);
 
         // 2=> CREATE HTML ELEMENT
-        const li = document.createElement("li");
-        li.innerText = post.title;
-        console.log(li);
+        const postCard = document.createElement("div");
+        postCard.innerHTML = `<div class="post-card">
+            <h1> ${post.title} </h1>
+            <p>
+                ${post.body}
+            </p>
+        </div>`;
 
-        // 3=> ADD LI INTO CONTAINER
-        postContainer.appendChild(li);
+        postContainer.append(postCard);
     });
 };
